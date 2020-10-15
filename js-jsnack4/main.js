@@ -1,16 +1,26 @@
-//jsnak1: trova il maggiore tra due numeri inseriti dall'utente
+//Crea un array vuoto. Chiedi per 6 volte all’utente di inserire
+//un numero, se è dispari inseriscilo nell’array.
 
 
 
-//chiedo due numer all'utente
-var num1 = prompt('NUM1');
-var num2 = prompt('NUM2');
+//Dichiarazione array contentente i numeri
+var numbers = [];
+//variabile d'appoggio per pushare i numeri nell'array
+var num;
+//dichiarazione contatori
+var i = 0;
+//Variabile contenente la somma
+var sum = 0;
 
-//cerco il maggiore
-if(num1 > num2){
-    console.log('NUM1 maggiore');
-} else if(num2 > num1){
-    console.log('NUM2 maggiore');
-}else {
-    console.log('NUM1 uguale a NUM2');
+//6 iterazioni
+for(i = 0; i < 6; i++){
+
+    //Chiede un numero all'utente, lo rende int e, se è dispari, lo pusha nell'array
+    num = prompt('inserisci un numero: ');
+    num = parseInt(num);
+    if (num % 2 != 0){
+        numbers.push(num);
+        console.log(num);
+    }
+
 }
