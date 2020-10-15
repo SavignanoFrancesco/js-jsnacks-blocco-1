@@ -24,3 +24,6 @@ for(i = 0; i < 6; i++){
     }
 
 }
+
+//stampa array con i soli numeri dispari
+console.log(numbers);
