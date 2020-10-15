@@ -1,16 +1,25 @@
-//jsnak1: trova il maggiore tra due numeri inseriti dall'utente
+//Calcola la somma e la media dei numeri da 1 a 10.
 
 
+//numero di cui calcolare le potenze
+var num = 10;
+//variabili contenente il risultato da stampare
+var sum = 0, mean = 0;
+//dichiarazione contatori
+var i = 0;
 
-//chiedo due numer all'utente
-var num1 = prompt('NUM1');
-var num2 = prompt('NUM2');
 
-//cerco il maggiore
-if(num1 > num2){
-    console.log('NUM1 maggiore');
-} else if(num2 > num1){
-    console.log('NUM2 maggiore');
-}else {
-    console.log('NUM1 uguale a NUM2');
+//itera num volte e somma i numeri da i a num
+for(i = 1; i <= num ; i++){
+
+    sum += i;
+    console.log('somma =', sum);
+
 }
+
+//calcola la media
+mean = sum / num;
+
+//stampa i risultati
+console.log('La somma dei numeri da 1 a 10 è: ', sum);
+console.log('La media è: ', mean);
