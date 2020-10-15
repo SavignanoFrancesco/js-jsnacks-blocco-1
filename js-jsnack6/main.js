@@ -7,27 +7,20 @@ var num = 2;
 var res = 1;
 //dichiarazione contatori
 var i = 0, j = 0;
-//variabile per controllare se la potenza è <= 1000
-var flag = false;
 
 
-//itera fino a risultato massimo di 1000(con res <=1000 flag rimane false )
-for(i = 1; !flag ; i++){
+//itera fino a risultato massimo di 1000
+for(i = 1; res <= 1000 ; i++){
 
-    ////calcola 2 alla j
+    //calcola 2 alla j
     for(j = 0; j < i ; j++){
         res *= num;
     }
 
-    //se il risultato è maggiore di mille faccio terminare il ciclo
-    if(res <= 1000){
+    //se non ha superato il valore 1000,stampo e poi reimposto res a 1 per fare il prossimo calcolo
+    if (res <= 1000){
         console.log(num, ' alla ',i , ' = ', res);
-
-    }else{
-        flag = true;
+        res = 1;
     }
-
-    //reimposto res a 1 per fare il prossimo calcolo
-    res = 1;
 
 }
