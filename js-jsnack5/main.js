@@ -1,16 +1,23 @@
-//jsnak1: trova il maggiore tra due numeri inseriti dall'utente
+//Stampa il cubo dei primi N numeri, dove N è un numero
+//indicato dall’utente.
 
 
 
-//chiedo due numer all'utente
-var num1 = prompt('NUM1');
-var num2 = prompt('NUM2');
+//Dichiarazione array contentente i numeri
+var numbers = [];
+//numero da chiedere all'utente e cube per stamparne il cubo
+var num, cube = 0;
+//dichiarazione contatori
+var i = 0;
 
-//cerco il maggiore
-if(num1 > num2){
-    console.log('NUM1 maggiore');
-} else if(num2 > num1){
-    console.log('NUM2 maggiore');
-}else {
-    console.log('NUM1 uguale a NUM2');
+//chiedo all'utente un numero
+num = prompt('Inserisci un numero: ');
+
+//num iterazioni
+for(i = 1; i <= num; i++){
+
+    //calcola il cubo e stampa in console
+    cube = i * i * i;
+    console.log('il cubo di ', i, ' é ', cube);
+
 }
