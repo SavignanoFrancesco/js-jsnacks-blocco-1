@@ -2,26 +2,19 @@
 
 
 //numero di cui calcolare le potenze
-var num = 2;
+var base = 2;
 //variabile contenente il risultato da stampare
-var res = 1;
+var potenza = 1;
 //dichiarazione contatori
-var i = 0, j = 0;
+var i = 0;
 //risultato massimo
-var max_res = 1000;
+var limite = 1000;
 
 //itera fino a risultato massimo di 1000
-for(i = 1; res <= max_res ; i++){
+for(i = 1; potenza < limite ; i++){
 
-    //calcola 2 alla i
-    for(j = 0; j < i ; j++){
-        res *= num;
-    }
-
-    //se non ha superato il valore 1000,stampo e poi reimposto res a 1 per fare il prossimo calcolo
-    if (res <= max_res){
-        console.log(num, ' alla ',i , ' = ', res);
-        res = 1;
-    }
+    console.log(potenza);
+    //i si comporta da esponente
+    potenza = Math.pow(base,i);
 
 }
