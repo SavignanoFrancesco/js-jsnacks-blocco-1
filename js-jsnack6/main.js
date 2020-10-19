@@ -7,10 +7,11 @@ var num = 2;
 var res = 1;
 //dichiarazione contatori
 var i = 0, j = 0;
-
+//risultato massimo
+var max_res = 1000;
 
 //itera fino a risultato massimo di 1000
-for(i = 1; res <= 1000 ; i++){
+for(i = 1; res <= max_res ; i++){
 
     //calcola 2 alla i
     for(j = 0; j < i ; j++){
@@ -18,7 +19,7 @@ for(i = 1; res <= 1000 ; i++){
     }
 
     //se non ha superato il valore 1000,stampo e poi reimposto res a 1 per fare il prossimo calcolo
-    if (res <= 1000){
+    if (res <= max_res){
         console.log(num, ' alla ',i , ' = ', res);
         res = 1;
     }
