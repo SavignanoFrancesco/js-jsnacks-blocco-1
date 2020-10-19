@@ -12,7 +12,7 @@ var i = 0, j = 0;
 //itera fino a risultato massimo di 1000
 for(i = 1; res <= 1000 ; i++){
 
-    //calcola 2 alla j
+    //calcola 2 alla i
     for(j = 0; j < i ; j++){
         res *= num;
     }
